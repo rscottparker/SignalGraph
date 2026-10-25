@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SignalGraph.Telemetry</RootNamespace>
+    <AssemblyName>SignalGraph.Telemetry</AssemblyName>
+    <Description>API-first telemetry for traces and exceptions with a simple what/when/why model, OpenTelemetry-compatible.</Description>
+    <PackageTags>telemetry;opentelemetry;tracing;exceptions;signalgraph</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="OpenTelemetry.Api" Version="1.20.1" />
+  </ItemGroup>
+
+</Project>
